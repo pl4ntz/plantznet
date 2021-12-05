@@ -7,7 +7,7 @@ title: PlantzNet
 subtitle: ''
 description: ''
 keywords:
-author: Sh4wnB0b
+author: PlantzNet
 language: en
 timezone: ''
 
@@ -29,6 +29,27 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+# Hexo-generator-search
+search:
+  path: search.xml
+  field: post
+  format: html
+
+# Hexo-Generator-Feed
+feed:
+    enable: true
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content:
+    content_limit: 140
+    content_limit_delim: ' '
+    order_by: -date
+    icon: icon.png
+    autodiscovery: true
+    template:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -98,7 +119,6 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: landscape
-
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
