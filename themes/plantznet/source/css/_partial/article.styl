@@ -1,5 +1,5 @@
 .article
-  margin: block-margin 0
+  border-top: 1px solid #2f2f2f
 
 .article-inner
   @extend $block
@@ -26,7 +26,7 @@
   margin: 0 12px 1em
 
 .article-header
-  padding: article-padding article-padding 0
+  padding: article-padding 0
 
 .article-title
   text-decoration: none
@@ -34,7 +34,7 @@
   font-weight: bold
   color: color-default
   line-height: line-height-title
-  transition: color 0.2s
+  transition: color 0.0625s
   a&:hover
     color: color-link
 
@@ -42,7 +42,7 @@
   @extend $base-style
   clearfix()
   color: color-default
-  padding: 0 article-padding
+  padding:  article-padding 0
   p, table
     line-height: line-height
     margin: line-height 0
@@ -72,11 +72,11 @@
     border-spacing: 0
   th
     font-weight: bold
-    border-bottom: 3px solid color-border
-    padding-bottom: 0.5em
+    border-bottom: 1px solid #1d1d1d
+    padding-bottom:  article-padding
   td
-    border-bottom: 1px solid color-border
-    padding: 10px 0
+    border-bottom: 1px solid #1d1d1d
+    padding:  article-padding 0
   blockquote
     font-family: font-serif
     font-size: 1.4em
@@ -84,12 +84,11 @@
     text-align: center
     footer
       font-size: font-size
-      margin: line-height 0
       font-family: font-sans
       cite
         &:before
           content: "—"
-          padding: 0 0.5em
+          padding:  article-padding 0
   .pullquote
     text-align: left
     width: 45%
@@ -124,7 +123,7 @@
 .article-more-link a
   display: inline-block
   line-height: 1em
-  padding: 6px 15px
+  padding: article-padding
   border-radius: 15px
   background: color-background
   color: color-grey
@@ -138,11 +137,9 @@
 
 .article-footer
   clearfix()
-  font-size: 0.85em
-  line-height: line-height
+  font-size: font-size
   border-top: 1px solid color-border
-  padding-top: line-height
-  margin: 0 article-padding article-padding
+  padding: article-padding 0
   a
     color: color-grey
     text-decoration: none
@@ -162,7 +159,7 @@
   &:before
     content: "\f075"
     font-family: font-icon
-    padding-right: 8px
+    padding-right: article-padding
 
 .article-share-link
   cursor: pointer
@@ -171,7 +168,7 @@
   &:before
     content: "\f064"
     font-family: font-icon
-    padding-right: 6px
+    padding-right: article-padding
 
 #article-nav
   clearfix()
@@ -203,13 +200,13 @@
   @media mq-normal
     float: left
     text-align: right
-    padding-right: 20px
+    padding-right: article-padding
 
 #article-nav-older
   @media mq-normal
     float: right
     text-align: left
-    padding-left: 20px
+    padding-left: article-padding
 
 .article-nav-caption
   text-transform: uppercase
@@ -242,7 +239,7 @@
   background: none
   box-sizing: border-box
   font: 14px font-sans
-  padding: 0 15px
+  padding:  article-padding
   color: color-default
   outline: none
   border: 1px solid color-border
@@ -331,7 +328,7 @@ $article-gallery-ctrl
   color: #fff
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
   opacity: 0.3
-  transition: opacity 0.2s
+  transition: opacity 0.0625s
   cursor: pointer
   &:hover
     opacity: 0.8

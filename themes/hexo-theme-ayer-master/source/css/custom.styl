@@ -6,16 +6,35 @@ if hexo-config('mouse.enable')
     body
         cursor: url($mouse-url),auto;
 
+
+.cover-frame
+    background #272727
+
+.cover .forkMe
+    display none
+
+.navbar .nav .nav-item-link:hover
+    background #2d2d2d
+    color #ffffff
+
+.navbar .nav .nav-item-link
+    color #a7a7a7
+
+.cover-inner, .cover-inner a, .cover-learn-more a>i
+    color #acacac
+
 .sidebar
-    left - $aside-width
-    width $aside-width
+    left: 0
+    width 128px
+    background #212121
     &.on
         left 0
 .content
     &.on
         margin-left 0 !important
 .navbar-toggle
-    left 1.5rem + $aside-width
+    display none
+    
 .search-form-wrap
     right $aside-width
 
